@@ -14,7 +14,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist/'));
+app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
+app.use('/vue', express.static(__dirname + '/node_modules/vue/dist/'));
+app.use('/font-awesome', express.static(__dirname + '/node_modules/font-awesome/'));
+
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+// app.use('/users', usersRouter);
 
 module.exports = app;
