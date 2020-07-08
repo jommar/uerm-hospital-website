@@ -112,3 +112,8 @@ dist
 .vscode-test
 
 # End of https://www.toptal.com/developers/gitignore/api/node
+
+public/assets/img
+public/assets/img-temp
+public/assets/media-temp
+public/assets/figures
